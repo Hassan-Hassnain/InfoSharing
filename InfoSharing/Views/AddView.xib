@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddView" customModule="InfoSharing" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="kN5-7F-yZ7"/>
+                <outlet property="titleTF" destination="11U-g3-fPt" id="WdV-g2-bqv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aph-Gw-wDe">
+                    <rect key="frame" x="15" y="10" width="384" height="163"/>
+                    <color key="backgroundColor" red="0.66902792453765869" green="0.73128575086593628" blue="0.94889926910400391" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="11U-g3-fPt">
+                    <rect key="frame" x="20" y="44" width="374" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create New Todo Item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PR-Rm-cH4">
+                    <rect key="frame" x="122" y="10" width="170.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="sFL-Cm-zNG">
+                    <rect key="frame" x="107" y="86" width="192" height="30"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpa-GT-IV0">
+                            <rect key="frame" x="0.0" y="0.0" width="86" height="30"/>
+                            <color key="backgroundColor" red="0.77326834201812744" green="0.89621090888977051" blue="0.94588643312454224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="86" id="WBS-Jl-HaE"/>
+                                <constraint firstAttribute="height" constant="30" id="kfB-Q2-Xbd"/>
+                            </constraints>
+                            <state key="normal" title="Start From">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="selectDate:" destination="-1" eventType="touchUpInside" id="PlS-Sa-IbV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKh-HP-f8Q">
+                            <rect key="frame" x="106" y="0.0" width="86" height="30"/>
+                            <color key="backgroundColor" red="0.77961307764053345" green="0.94407957792282104" blue="0.88890808820724487" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="End To">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="selectTime:" destination="-1" eventType="touchUpInside" id="kcm-lb-SKo"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uyu-mc-uUT">
+                    <rect key="frame" x="89" y="131" width="236" height="30"/>
+                    <color key="backgroundColor" red="0.79226005079999995" green="0.71810984609999995" blue="0.48854580520000002" alpha="0.31752512562814073" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <state key="normal" title="Add Todo">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="addNewTodo:" destination="-1" eventType="touchUpInside" id="kuo-dV-wIe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="0.18843043341708537" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="aph-Gw-wDe" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-15" id="2dN-gA-rUq"/>
+                <constraint firstItem="3PR-Rm-cH4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="3fF-Pm-DDp"/>
+                <constraint firstItem="11U-g3-fPt" firstAttribute="top" secondItem="3PR-Rm-cH4" secondAttribute="bottom" constant="13.5" id="3hW-zB-ciL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sFL-Cm-zNG" secondAttribute="trailing" constant="115" id="99u-M0-BOz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Uyu-mc-uUT" secondAttribute="trailing" constant="89" id="AEw-R8-5y0"/>
+                <constraint firstItem="aph-Gw-wDe" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="-15" id="CP4-Cc-Nki"/>
+                <constraint firstItem="sFL-Cm-zNG" firstAttribute="top" secondItem="11U-g3-fPt" secondAttribute="bottom" constant="8" id="YAQ-HC-6CR"/>
+                <constraint firstItem="aph-Gw-wDe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="YXt-GJ-Ud5"/>
+                <constraint firstItem="Uyu-mc-uUT" firstAttribute="top" secondItem="sFL-Cm-zNG" secondAttribute="bottom" constant="15" id="Zb7-Lp-gVR"/>
+                <constraint firstItem="Uyu-mc-uUT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="89" id="bas-Ka-883"/>
+                <constraint firstAttribute="trailing" secondItem="3PR-Rm-cH4" secondAttribute="trailing" constant="121.5" id="c7V-WG-5hx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="11U-g3-fPt" secondAttribute="trailing" constant="20" id="fMj-lP-fN1"/>
+                <constraint firstItem="3PR-Rm-cH4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="122" id="gYu-2b-vUs"/>
+                <constraint firstItem="aph-Gw-wDe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="hb6-sg-1rV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Uyu-mc-uUT" secondAttribute="bottom" constant="27" id="nw8-O2-Heq"/>
+                <constraint firstItem="11U-g3-fPt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="r26-RU-IuL"/>
+                <constraint firstItem="sFL-Cm-zNG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="107" id="z4W-uE-qj4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="81.159420289855078" y="-68.303571428571431"/>
+        </view>
+    </objects>
+</document>
