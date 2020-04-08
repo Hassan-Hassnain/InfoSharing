@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C5FED8F243E384E00E86622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FED8E243E384E00E86622 /* Main.storyboard */; };
 		3C6393DF243D0F040089F04B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6393DE243D0F040089F04B /* AppDelegate.swift */; };
 		3C6393E1243D0F040089F04B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6393E0243D0F040089F04B /* SceneDelegate.swift */; };
 		3C6393E3243D0F040089F04B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6393E2243D0F040089F04B /* LoginVC.swift */; };
@@ -25,12 +26,12 @@
 		3C63940E243D3FA10089F04B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63940C243D3FA10089F04B /* DataService.swift */; };
 		3CCECE0E243D44C800A2D820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE0D243D44C800A2D820 /* Constants.swift */; };
 		3CCECE14243D488A00A2D820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE13243D488A00A2D820 /* User.swift */; };
-		3CCECE17243D505000A2D820 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCECE15243D505000A2D820 /* Main.storyboard */; };
 		523FBDE9EF5C046E4052F686 /* Pods_InfoSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4D572736BFBAB3BA40B4FA /* Pods_InfoSharing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BF333310E14184E51686DE0 /* Pods-InfoSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoSharing.release.xcconfig"; path = "Target Support Files/Pods-InfoSharing/Pods-InfoSharing.release.xcconfig"; sourceTree = "<group>"; };
+		3C5FED8E243E384E00E86622 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3C6393DB243D0F040089F04B /* InfoSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6393DE243D0F040089F04B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C6393E0243D0F040089F04B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,7 +52,6 @@
 		3C63940C243D3FA10089F04B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3CCECE0D243D44C800A2D820 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3CCECE13243D488A00A2D820 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		3CCECE16243D505000A2D820 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = InfoSharing/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		8015325F661CABB73A990029 /* Pods-InfoSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoSharing.debug.xcconfig"; path = "Target Support Files/Pods-InfoSharing/Pods-InfoSharing.debug.xcconfig"; sourceTree = "<group>"; };
 		CC4D572736BFBAB3BA40B4FA /* Pods_InfoSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfoSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -105,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				3C6393E9243D0F090089F04B /* LaunchScreen.storyboard */,
+				3C5FED8E243E384E00E86622 /* Main.storyboard */,
 				3C6393F2243D15B90089F04B /* TaskCell.swift */,
 				3C6393FB243D1F6B0089F04B /* AddView.swift */,
 				3C6393FC243D1F6B0089F04B /* AddView.xib */,
@@ -115,7 +116,6 @@
 		3C63940F243D3FAB0089F04B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				3CCECE15243D505000A2D820 /* Main.storyboard */,
 				3C63940B243D3FA10089F04B /* AuthService.swift */,
 				3C63940C243D3FA10089F04B /* DataService.swift */,
 			);
@@ -239,9 +239,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C639402243D1F6C0089F04B /* AddView.xib in Resources */,
+				3C5FED8F243E384E00E86622 /* Main.storyboard in Resources */,
 				3C6393EB243D0F090089F04B /* LaunchScreen.storyboard in Resources */,
 				3C63940A243D3C1B0089F04B /* GoogleService-Info.plist in Resources */,
-				3CCECE17243D505000A2D820 /* Main.storyboard in Resources */,
 				3C6393E8243D0F090089F04B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -321,14 +321,6 @@
 				3C6393EA243D0F090089F04B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		3CCECE15243D505000A2D820 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3CCECE16243D505000A2D820 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
