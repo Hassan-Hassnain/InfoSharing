@@ -1,0 +1,6 @@
+framework module Pods_InfoSharing {
+  umbrella header "Pods-InfoSharing-umbrella.h"
+
+  export *
+  module * { export * }
+}
