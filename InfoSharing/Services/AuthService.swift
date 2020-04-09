@@ -5,19 +5,16 @@
 //  Created by Usama Sadiq on 3/16/20.
 //  Copyright © 2020 Usama Sadiq. All rights reserved.
 //
-
 import Foundation
 import Firebase
-import FirebaseStorage
 
 class AuthService {
     static let instance = AuthService()
     
     func createUser(withEmail email: String, andPassword passowrd: String, registrationCompletion: @escaping (_ user: User?) -> ()) {
         Auth.auth().createUser(withEmail: email, password: passowrd) { (authResult, error) in
-            guard let Firuser = authResult?.user , error == nil else { registrationCompletion(nil); return}
-            let user = User(uid: Firuser.uid, name: Firuser.displayName!, email: Firuser.email!)
-            registrationCompletion(user)
+            guard let result = authResult?.user , error == nil else { registrationCompletion(nil); return}
+            registrationCompletion(result)
         }
     }
     
@@ -34,7 +31,7 @@ class AuthService {
     func resetPassword(withEmail email: String, onCompletion: @escaping (_ success: Bool, _ error: String?)-> ()){
         Auth.auth().sendPasswordReset(withEmail: email) { (error) in
             if error == nil {
-//                onCompletion(true, FireMessages.PASSWORD_CHANGE_SUCCESSFUL)
+                onCompletion(true, FireMessages.PASSWORD_CHANGE_SUCCESSFUL)
             } else {
                 onCompletion(false, error?.localizedDescription)
             }
@@ -51,7 +48,7 @@ class AuthService {
                     if error != nil {
                         onCompletion(false, error?.localizedDescription)
                     } else {
-//                        onCompletion(true, FireMessages.PASSWORD_CHANGE_SUCCESSFUL)
+                        onCompletion(true, FireMessages.PASSWORD_CHANGE_SUCCESSFUL)
                     }
                 })
             }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct User {
+struct DeviceUser {
     var uid: String
     var name: String
     var email: String

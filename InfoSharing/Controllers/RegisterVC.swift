@@ -21,28 +21,19 @@ class RegisterVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBAction func registerButtonTapped(_ sender: UIButton) {
-        if emailTF != nil, passwordTF != nil {
-            AuthService.instance.createUser(withEmail: emailTF.text!, andPassword: passwordTF.text!) { (user) in
-                guard let user = user else {return}
-                let dict = [
-                    UserData.USER_NAME: self.nameTF.text!,
-                    UserData.UESR_EMAIL: self.emailTF.text!,
-                ]
-                
-                DataService.instance.updateDBUser(uid: user.uid, userData: dict) {(success) in
-                    if success {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(4), execute: {
-                            self.statusLabel.text = "Your are registerd successfully!"
-                            self.navigationController?.popViewController(animated: true)
-                        })
-                    } else {
-                        print("Database update failed")
+        if let name = nameTF.text ,let email = emailTF.text, let password = passwordTF.text {
+            AuthService.instance.registerUser(withEmail: email, andPassword: password) { (user, error) in
+                if error == nil {
+                    if let user = user {
+                        let userData = [kUserData.PROVIDER_ID : user.providerID, kUserData.USER_NAME : name ,kUserData.UESR_EMAIL : user.email]
+                        DataService.instance.createDBUser(uid: user.uid, userData: userData as Dictionary<String, Any>)
+                        print("Registration successful with \(user.uid)")
                     }
+                } else {
+                    print("User registation failed")
                 }
             }
         }
     }
     
-    
 }
-

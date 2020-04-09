@@ -36,10 +36,10 @@ class TaskCell: UITableViewCell {
         self.startTimeLabel.text = startTime
         self.endTiemLabel.text = endTime
     }
-    func configure(task: Task) {
+    func configure(task: ToDo) {
         self.nameLabel.text = task.name
         self.updateTimeLabel.text = task.updateTime
-        self.taskLabel.text = task.task
+        self.taskLabel.text = task.todoTitle
         self.startTimeLabel.text = task.startTime
         self.endTiemLabel.text = task.endTime
     }

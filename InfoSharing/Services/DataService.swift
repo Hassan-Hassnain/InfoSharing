@@ -28,11 +28,12 @@ class DataService {
         return _REF_USERS
     }
     
-    
-    
+     func createDBUser(uid: String, userData: Dictionary<String, Any>){
+           REF_USERS.child(uid).updateChildValues(userData)
+       }
+       
     func updateDBUser(uid: String, userData: Dictionary<String, Any>, onSuccess: @escaping (_ success: Bool)->()) {
-        REF_USERS.child(uid).updateChildValues(userData, withCompletionBlock: {
-            (error, ref) in
+        REF_USERS.child(uid).updateChildValues(userData, withCompletionBlock: { (error, ref) in
             if error == nil {
                 onSuccess(true)
             } else {

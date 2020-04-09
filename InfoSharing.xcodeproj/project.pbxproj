@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3C5FED8F243E384E00E86622 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C5FED8E243E384E00E86622 /* Main.storyboard */; };
+		3C5FED92243E43A100E86622 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FED90243E43A100E86622 /* AuthService.swift */; };
+		3C5FED93243E43A100E86622 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C5FED91243E43A100E86622 /* DataService.swift */; };
 		3C6393DF243D0F040089F04B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6393DE243D0F040089F04B /* AppDelegate.swift */; };
 		3C6393E1243D0F040089F04B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6393E0243D0F040089F04B /* SceneDelegate.swift */; };
 		3C6393E3243D0F040089F04B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6393E2243D0F040089F04B /* LoginVC.swift */; };
@@ -22,16 +24,16 @@
 		3C639406243D21EC0089F04B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C639405243D21EC0089F04B /* Extensions.swift */; };
 		3C639408243D21F50089F04B /* CreateTodoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C639407243D21F50089F04B /* CreateTodoDelegate.swift */; };
 		3C63940A243D3C1B0089F04B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C639409243D3C1A0089F04B /* GoogleService-Info.plist */; };
-		3C63940D243D3FA10089F04B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63940B243D3FA10089F04B /* AuthService.swift */; };
-		3C63940E243D3FA10089F04B /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63940C243D3FA10089F04B /* DataService.swift */; };
 		3CCECE0E243D44C800A2D820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE0D243D44C800A2D820 /* Constants.swift */; };
-		3CCECE14243D488A00A2D820 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE13243D488A00A2D820 /* User.swift */; };
+		3CCECE14243D488A00A2D820 /* DeviceUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE13243D488A00A2D820 /* DeviceUser.swift */; };
 		523FBDE9EF5C046E4052F686 /* Pods_InfoSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4D572736BFBAB3BA40B4FA /* Pods_InfoSharing.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3BF333310E14184E51686DE0 /* Pods-InfoSharing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoSharing.release.xcconfig"; path = "Target Support Files/Pods-InfoSharing/Pods-InfoSharing.release.xcconfig"; sourceTree = "<group>"; };
 		3C5FED8E243E384E00E86622 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3C5FED90243E43A100E86622 /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AuthService.swift; path = "../../../Israr Ul Haq/Devslopes/Breakpoint/Breakpoint/Services/AuthService.swift"; sourceTree = "<group>"; };
+		3C5FED91243E43A100E86622 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataService.swift; path = "../../../Israr Ul Haq/Devslopes/Breakpoint/Breakpoint/Services/DataService.swift"; sourceTree = "<group>"; };
 		3C6393DB243D0F040089F04B /* InfoSharing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InfoSharing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C6393DE243D0F040089F04B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3C6393E0243D0F040089F04B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,10 +50,8 @@
 		3C639405243D21EC0089F04B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3C639407243D21F50089F04B /* CreateTodoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTodoDelegate.swift; sourceTree = "<group>"; };
 		3C639409243D3C1A0089F04B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		3C63940B243D3FA10089F04B /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
-		3C63940C243D3FA10089F04B /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		3CCECE0D243D44C800A2D820 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		3CCECE13243D488A00A2D820 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3CCECE13243D488A00A2D820 /* DeviceUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUser.swift; sourceTree = "<group>"; };
 		8015325F661CABB73A990029 /* Pods-InfoSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoSharing.debug.xcconfig"; path = "Target Support Files/Pods-InfoSharing/Pods-InfoSharing.debug.xcconfig"; sourceTree = "<group>"; };
 		CC4D572736BFBAB3BA40B4FA /* Pods_InfoSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfoSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -116,8 +116,8 @@
 		3C63940F243D3FAB0089F04B /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				3C63940B243D3FA10089F04B /* AuthService.swift */,
-				3C63940C243D3FA10089F04B /* DataService.swift */,
+				3C5FED90243E43A100E86622 /* AuthService.swift */,
+				3C5FED91243E43A100E86622 /* DataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -126,7 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				3C6393F4243D16D60089F04B /* Task.swift */,
-				3CCECE13243D488A00A2D820 /* User.swift */,
+				3CCECE13243D488A00A2D820 /* DeviceUser.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -296,13 +296,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C6393F3243D15B90089F04B /* TaskCell.swift in Sources */,
+				3C5FED93243E43A100E86622 /* DataService.swift in Sources */,
 				3C639406243D21EC0089F04B /* Extensions.swift in Sources */,
 				3C6393F7243D18000089F04B /* MainVC.swift in Sources */,
-				3C63940E243D3FA10089F04B /* DataService.swift in Sources */,
 				3C6393E3243D0F040089F04B /* LoginVC.swift in Sources */,
 				3C6393F5243D16D60089F04B /* Task.swift in Sources */,
-				3CCECE14243D488A00A2D820 /* User.swift in Sources */,
-				3C63940D243D3FA10089F04B /* AuthService.swift in Sources */,
+				3CCECE14243D488A00A2D820 /* DeviceUser.swift in Sources */,
+				3C5FED92243E43A100E86622 /* AuthService.swift in Sources */,
 				3CCECE0E243D44C800A2D820 /* Constants.swift in Sources */,
 				3C639408243D21F50089F04B /* CreateTodoDelegate.swift in Sources */,
 				3C639401243D1F6C0089F04B /* AddView.swift in Sources */,

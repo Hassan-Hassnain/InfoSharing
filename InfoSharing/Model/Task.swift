@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct Task {
+struct ToDo {
     var name: String
     var updateTime: String
-    var task: String
+    var todoTitle: String
     var startTime: String
     var endTime: String
 }

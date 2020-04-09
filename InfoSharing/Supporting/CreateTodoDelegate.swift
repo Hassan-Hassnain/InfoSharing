@@ -9,7 +9,7 @@
 import Foundation
 
 protocol CreateTodoDelegate {
-     func startFromFromDidTapped()
+    func startFromFromDidTapped()
     func endToButtonDidTapped()
     func addTodoDidTapped()
 }
