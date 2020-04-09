@@ -24,6 +24,8 @@
 		3C639406243D21EC0089F04B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C639405243D21EC0089F04B /* Extensions.swift */; };
 		3C639408243D21F50089F04B /* CreateTodoDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C639407243D21F50089F04B /* CreateTodoDelegate.swift */; };
 		3C63940A243D3C1B0089F04B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3C639409243D3C1A0089F04B /* GoogleService-Info.plist */; };
+		3C6AD27B243F973200E95A6A /* LoginWithPhooneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6AD27A243F973200E95A6A /* LoginWithPhooneVC.swift */; };
+		3C6AD27D243FC34000E95A6A /* PhoneAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6AD27C243FC34000E95A6A /* PhoneAuthService.swift */; };
 		3CCECE0E243D44C800A2D820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE0D243D44C800A2D820 /* Constants.swift */; };
 		3CCECE14243D488A00A2D820 /* DeviceUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE13243D488A00A2D820 /* DeviceUser.swift */; };
 		523FBDE9EF5C046E4052F686 /* Pods_InfoSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4D572736BFBAB3BA40B4FA /* Pods_InfoSharing.framework */; };
@@ -50,6 +52,8 @@
 		3C639405243D21EC0089F04B /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		3C639407243D21F50089F04B /* CreateTodoDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateTodoDelegate.swift; sourceTree = "<group>"; };
 		3C639409243D3C1A0089F04B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3C6AD27A243F973200E95A6A /* LoginWithPhooneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithPhooneVC.swift; sourceTree = "<group>"; };
+		3C6AD27C243FC34000E95A6A /* PhoneAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthService.swift; sourceTree = "<group>"; };
 		3CCECE0D243D44C800A2D820 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3CCECE13243D488A00A2D820 /* DeviceUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUser.swift; sourceTree = "<group>"; };
 		8015325F661CABB73A990029 /* Pods-InfoSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoSharing.debug.xcconfig"; path = "Target Support Files/Pods-InfoSharing/Pods-InfoSharing.debug.xcconfig"; sourceTree = "<group>"; };
@@ -90,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				3C6393EC243D0F090089F04B /* Info.plist */,
-				3CCECE10243D47A000A2D820 /* Supporting */,
 				3C639409243D3C1A0089F04B /* GoogleService-Info.plist */,
+				3CCECE10243D47A000A2D820 /* Supporting */,
 				3CCECE11243D47D500A2D820 /* Controllers */,
 				3CCECE12243D47FE00A2D820 /* Resources */,
 				3CCECE0F243D477D00A2D820 /* Model */,
@@ -118,6 +122,7 @@
 			children = (
 				3C5FED90243E43A100E86622 /* AuthService.swift */,
 				3C5FED91243E43A100E86622 /* DataService.swift */,
+				3C6AD27C243FC34000E95A6A /* PhoneAuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				3C6393E2243D0F040089F04B /* LoginVC.swift */,
 				3C6393F8243D1BF60089F04B /* RegisterVC.swift */,
 				3C6393F6243D18000089F04B /* MainVC.swift */,
+				3C6AD27A243F973200E95A6A /* LoginWithPhooneVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -305,9 +311,11 @@
 				3C5FED92243E43A100E86622 /* AuthService.swift in Sources */,
 				3CCECE0E243D44C800A2D820 /* Constants.swift in Sources */,
 				3C639408243D21F50089F04B /* CreateTodoDelegate.swift in Sources */,
+				3C6AD27B243F973200E95A6A /* LoginWithPhooneVC.swift in Sources */,
 				3C639401243D1F6C0089F04B /* AddView.swift in Sources */,
 				3C6393F9243D1BF60089F04B /* RegisterVC.swift in Sources */,
 				3C6393DF243D0F040089F04B /* AppDelegate.swift in Sources */,
+				3C6AD27D243FC34000E95A6A /* PhoneAuthService.swift in Sources */,
 				3C6393E1243D0F040089F04B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +453,7 @@
 			baseConfigurationReference = 8015325F661CABB73A990029 /* Pods-InfoSharing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T898NTACMU;
 				INFOPLIST_FILE = InfoSharing/Info.plist;
@@ -454,6 +463,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devoders.ahh.Foody-Bite.InfoSharing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -464,6 +474,7 @@
 			baseConfigurationReference = 3BF333310E14184E51686DE0 /* Pods-InfoSharing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T898NTACMU;
 				INFOPLIST_FILE = InfoSharing/Info.plist;
@@ -473,6 +484,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.devoders.ahh.Foody-Bite.InfoSharing";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

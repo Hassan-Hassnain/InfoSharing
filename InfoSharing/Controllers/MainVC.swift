@@ -23,17 +23,19 @@ class MainVC: UITableViewController {
         super.viewDidLoad()
         
         showAddView()
-        DataService.instance.getUserData { (user) in
+        DataService.instance.getUserData1 { (user) in
             self.deviceUser = user
         }
         
         DataService.instance.getAllToDos { (resultantTodos) in
             if let result = resultantTodos {
                 self.todos = []
+                print("Count befor assigning empty array \(self.todos.count)")
+                self.tableView.reloadData()
                 self.todos = result
+                print("Count Aftr assigning empty array \(self.todos.count)")
                 self.tableView.reloadData()
             }
-            print(self.todos.count)
         }
         
     }
