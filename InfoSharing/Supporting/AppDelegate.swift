@@ -10,7 +10,6 @@ import UIKit
 import Firebase
 import GoogleSignIn
 
-let CLIENT_ID = "750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com"
 
 
 @UIApplicationMain

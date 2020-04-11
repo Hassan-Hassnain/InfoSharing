@@ -16,4 +16,8 @@ download plist from [https://console.developers.google.com/apis/credentials/oaut
 
 4- Add all properties of this file in [GoogleService-info-plist]  if exist
 
-4- Integrating Google Sign-In into your iOS app
+5- add schemes url in info 
+
+6- Integrating Google Sign-In into your iOS app
+
+

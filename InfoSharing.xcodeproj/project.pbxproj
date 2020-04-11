@@ -30,6 +30,7 @@
 		3CCECE14243D488A00A2D820 /* DeviceUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE13243D488A00A2D820 /* DeviceUser.swift */; };
 		3CFDEF7D244214950069A94F /* GoogleEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFDEF7C244214950069A94F /* GoogleEventsVC.swift */; };
 		3CFDEF7F244217B00069A94F /* client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CFDEF7E244217B00069A94F /* client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist */; };
+		3CFDEF8124421D4A0069A94F /* GoogleCalendarEventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFDEF8024421D4A0069A94F /* GoogleCalendarEventService.swift */; };
 		523FBDE9EF5C046E4052F686 /* Pods_InfoSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4D572736BFBAB3BA40B4FA /* Pods_InfoSharing.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +62,7 @@
 		3CFDEF7B244212280069A94F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3CFDEF7C244214950069A94F /* GoogleEventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleEventsVC.swift; sourceTree = "<group>"; };
 		3CFDEF7E244217B00069A94F /* client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		3CFDEF8024421D4A0069A94F /* GoogleCalendarEventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleCalendarEventService.swift; sourceTree = "<group>"; };
 		8015325F661CABB73A990029 /* Pods-InfoSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoSharing.debug.xcconfig"; path = "Target Support Files/Pods-InfoSharing/Pods-InfoSharing.debug.xcconfig"; sourceTree = "<group>"; };
 		CC4D572736BFBAB3BA40B4FA /* Pods_InfoSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfoSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -130,6 +132,7 @@
 				3C5FED90243E43A100E86622 /* AuthService.swift */,
 				3C5FED91243E43A100E86622 /* DataService.swift */,
 				3C6AD27C243FC34000E95A6A /* PhoneAuthService.swift */,
+				3CFDEF8024421D4A0069A94F /* GoogleCalendarEventService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CFDEF8124421D4A0069A94F /* GoogleCalendarEventService.swift in Sources */,
 				3C6393F3243D15B90089F04B /* TaskCell.swift in Sources */,
 				3C5FED93243E43A100E86622 /* DataService.swift in Sources */,
 				3C639406243D21EC0089F04B /* Extensions.swift in Sources */,
