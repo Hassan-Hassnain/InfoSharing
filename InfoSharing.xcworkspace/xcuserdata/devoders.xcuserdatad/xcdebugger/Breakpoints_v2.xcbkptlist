@@ -119,16 +119,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9A248420-0F2A-456F-954F-614D02109477"
+            uuid = "0E52892D-7343-4DB0-9552-161EE5F23A5A"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "InfoSharing/Services/GoogleCalendarEventService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
-            landmarkName = "getEvents(for:)"
+            startingLineNumber = "60"
+            endingLineNumber = "60"
+            landmarkName = "addEventoToGoogleCalendar(summary:description:startTime:endTime:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
