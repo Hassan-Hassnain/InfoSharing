@@ -14,4 +14,8 @@ target 'InfoSharing' do
   pod 'Firebase/Auth'
   pod 'Firebase/Storage'
   
+  
+  pod 'GoogleSignIn'
+  pod 'GoogleAPIClientForREST/Calendar'
+  
 end

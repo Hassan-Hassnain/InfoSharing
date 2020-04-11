@@ -83,17 +83,34 @@
                                     <segue destination="UYA-Rt-Ygs" kind="show" id="evd-xo-96n"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMf-VW-4DH">
+                                <rect key="frame" x="119" y="513" width="176" height="30"/>
+                                <color key="backgroundColor" red="0.52106726169586182" green="0.24050712585449219" blue="0.68248951435089111" alpha="0.44933652638190957" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="107" id="Ha8-1a-lhu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="Add Event To Google Calendar\">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="r5y-sk-pEs" kind="show" id="LHe-Wz-U6q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="vbG-d3-ngs" firstAttribute="top" secondItem="eCl-uQ-J9r" secondAttribute="bottom" constant="35" id="0GJ-IJ-SO6"/>
+                            <constraint firstItem="dMf-VW-4DH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="119" id="3NV-rx-IN2"/>
                             <constraint firstItem="eCl-uQ-J9r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="4FG-Pe-oNd"/>
+                            <constraint firstItem="dMf-VW-4DH" firstAttribute="centerX" secondItem="I7E-BN-KDH" secondAttribute="centerX" id="5zw-kd-gTw"/>
                             <constraint firstItem="I7E-BN-KDH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FuE-Nz-lZC"/>
                             <constraint firstItem="eCl-uQ-J9r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HiD-6d-NNC"/>
                             <constraint firstItem="eCl-uQ-J9r" firstAttribute="top" secondItem="cUg-Lp-Bsw" secondAttribute="bottom" constant="70" id="Kpr-x7-U1f"/>
                             <constraint firstItem="I7E-BN-KDH" firstAttribute="top" secondItem="vbG-d3-ngs" secondAttribute="bottom" constant="33" id="MmE-e4-PqM"/>
                             <constraint firstItem="YkR-HC-lap" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WDS-zr-apG"/>
                             <constraint firstItem="cUg-Lp-Bsw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="mtC-ia-Py8"/>
+                            <constraint firstItem="dMf-VW-4DH" firstAttribute="top" secondItem="I7E-BN-KDH" secondAttribute="bottom" constant="29" id="nGJ-PY-sBV"/>
                             <constraint firstItem="YkR-HC-lap" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="omy-jR-vU0"/>
                             <constraint firstItem="cUg-Lp-Bsw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="rBZ-Y1-jvd"/>
                             <constraint firstItem="YkR-HC-lap" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="sla-VX-scR"/>
@@ -208,6 +225,111 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SHA-ro-9Ch" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="826.33928571428567"/>
+        </scene>
+        <!--Google EventsVC-->
+        <scene sceneID="3al-oB-2K3">
+            <objects>
+                <viewController id="r5y-sk-pEs" customClass="GoogleEventsVC" customModule="InfoSharing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LlG-B2-uJS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title Of the Event" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ech-7n-4wN">
+                                <rect key="frame" x="46" y="157" width="323" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uaV-e7-5fA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description of event" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqW-Yf-ess">
+                                <rect key="frame" x="46" y="230" width="323" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="imZ-ge-L5M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DjU-FB-TAc">
+                                <rect key="frame" x="46" y="321" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.66902792450000004" green="0.73128575090000003" blue="0.9488992691" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Start Date">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startDateButton:" destination="r5y-sk-pEs" eventType="touchUpInside" id="QK6-Yu-uiQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R9R-Lw-WRP">
+                                <rect key="frame" x="283" y="321" width="63" height="30"/>
+                                <color key="backgroundColor" red="0.66902792450000004" green="0.73128575090000003" blue="0.9488992691" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="End Date">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="endDateButton:" destination="r5y-sk-pEs" eventType="touchUpInside" id="9lJ-Yw-NfD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfG-sZ-wVJ">
+                                <rect key="frame" x="46" y="375" width="323" height="30"/>
+                                <color key="backgroundColor" red="0.66902792450000004" green="0.73128575090000003" blue="0.9488992691" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Add Event">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="addEventButton:" destination="r5y-sk-pEs" eventType="touchUpInside" id="UGk-ME-j6J"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pmb-5C-PIn">
+                                <rect key="frame" x="52" y="417" width="317" height="172"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="172" id="gGK-lE-dUt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qft-7I-lWC">
+                                <rect key="frame" x="46" y="108" width="133" height="30"/>
+                                <state key="normal" title="Sign In with Google"/>
+                                <connections>
+                                    <action selector="signInWithGoogleButton:" destination="r5y-sk-pEs" eventType="touchUpInside" id="DSv-8z-efj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lqW-Yf-ess" firstAttribute="top" secondItem="Ech-7n-4wN" secondAttribute="bottom" constant="23" id="1J3-Mm-1Nc"/>
+                            <constraint firstItem="ikF-rx-Qah" firstAttribute="trailing" secondItem="R9R-Lw-WRP" secondAttribute="trailing" constant="68" id="6S7-vh-o06"/>
+                            <constraint firstItem="Ech-7n-4wN" firstAttribute="leading" secondItem="ikF-rx-Qah" secondAttribute="leading" constant="46" id="A6T-Py-c6U"/>
+                            <constraint firstItem="Pmb-5C-PIn" firstAttribute="top" secondItem="LfG-sZ-wVJ" secondAttribute="bottom" constant="12" id="E18-Sh-NRo"/>
+                            <constraint firstItem="Ech-7n-4wN" firstAttribute="top" secondItem="ikF-rx-Qah" secondAttribute="top" constant="69" id="FoN-UP-IL9"/>
+                            <constraint firstItem="Pmb-5C-PIn" firstAttribute="trailing" secondItem="lqW-Yf-ess" secondAttribute="trailing" id="KBv-Jy-BSN"/>
+                            <constraint firstItem="ikF-rx-Qah" firstAttribute="trailing" secondItem="lqW-Yf-ess" secondAttribute="trailing" constant="45" id="L0v-0c-2cl"/>
+                            <constraint firstItem="lqW-Yf-ess" firstAttribute="leading" secondItem="ikF-rx-Qah" secondAttribute="leading" constant="46" id="MUm-JL-wpD"/>
+                            <constraint firstItem="Pmb-5C-PIn" firstAttribute="trailing" secondItem="LfG-sZ-wVJ" secondAttribute="trailing" id="S5a-Cd-8iA"/>
+                            <constraint firstItem="Pmb-5C-PIn" firstAttribute="leading" secondItem="ikF-rx-Qah" secondAttribute="leading" constant="52" id="THr-4h-VRq"/>
+                            <constraint firstItem="Qft-7I-lWC" firstAttribute="top" secondItem="ikF-rx-Qah" secondAttribute="top" constant="20" id="ZrD-wg-98f"/>
+                            <constraint firstItem="Qft-7I-lWC" firstAttribute="leading" secondItem="LfG-sZ-wVJ" secondAttribute="leading" id="fwc-Md-9hW"/>
+                            <constraint firstItem="Qft-7I-lWC" firstAttribute="leading" secondItem="Ech-7n-4wN" secondAttribute="leading" id="heO-9q-iaz"/>
+                            <constraint firstItem="DjU-FB-TAc" firstAttribute="baseline" secondItem="R9R-Lw-WRP" secondAttribute="baseline" id="jAO-rd-x9e"/>
+                            <constraint firstItem="Qft-7I-lWC" firstAttribute="leading" secondItem="DjU-FB-TAc" secondAttribute="leading" id="jKY-MH-kcg"/>
+                            <constraint firstItem="ikF-rx-Qah" firstAttribute="bottom" secondItem="Pmb-5C-PIn" secondAttribute="bottom" constant="273" id="l8s-S5-qWA"/>
+                            <constraint firstItem="LfG-sZ-wVJ" firstAttribute="top" secondItem="DjU-FB-TAc" secondAttribute="bottom" constant="24" id="p85-py-99Z"/>
+                            <constraint firstItem="ikF-rx-Qah" firstAttribute="trailing" secondItem="Ech-7n-4wN" secondAttribute="trailing" constant="45" id="yIT-aF-JOF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ikF-rx-Qah"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0p3-PG-W1n"/>
+                    <connections>
+                        <outlet property="descriptionTF" destination="lqW-Yf-ess" id="rg0-MO-ZQZ"/>
+                        <outlet property="titleTF" destination="Ech-7n-4wN" id="G8w-Rm-9Nm"/>
+                        <outlet property="userMsg" destination="Pmb-5C-PIn" id="rnl-tA-do3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tke-uS-1zl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1753.6231884057972" y="825.66964285714278"/>
         </scene>
         <!--RegisterVC-->
         <scene sceneID="feq-4j-ZIp">

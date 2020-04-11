@@ -28,6 +28,8 @@
 		3C6AD27D243FC34000E95A6A /* PhoneAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6AD27C243FC34000E95A6A /* PhoneAuthService.swift */; };
 		3CCECE0E243D44C800A2D820 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE0D243D44C800A2D820 /* Constants.swift */; };
 		3CCECE14243D488A00A2D820 /* DeviceUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CCECE13243D488A00A2D820 /* DeviceUser.swift */; };
+		3CFDEF7D244214950069A94F /* GoogleEventsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFDEF7C244214950069A94F /* GoogleEventsVC.swift */; };
+		3CFDEF7F244217B00069A94F /* client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CFDEF7E244217B00069A94F /* client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist */; };
 		523FBDE9EF5C046E4052F686 /* Pods_InfoSharing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC4D572736BFBAB3BA40B4FA /* Pods_InfoSharing.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,9 @@
 		3C6AD27C243FC34000E95A6A /* PhoneAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthService.swift; sourceTree = "<group>"; };
 		3CCECE0D243D44C800A2D820 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		3CCECE13243D488A00A2D820 /* DeviceUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceUser.swift; sourceTree = "<group>"; };
+		3CFDEF7B244212280069A94F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3CFDEF7C244214950069A94F /* GoogleEventsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleEventsVC.swift; sourceTree = "<group>"; };
+		3CFDEF7E244217B00069A94F /* client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
 		8015325F661CABB73A990029 /* Pods-InfoSharing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InfoSharing.debug.xcconfig"; path = "Target Support Files/Pods-InfoSharing/Pods-InfoSharing.debug.xcconfig"; sourceTree = "<group>"; };
 		CC4D572736BFBAB3BA40B4FA /* Pods_InfoSharing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InfoSharing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,6 +80,7 @@
 		3C6393D2243D0F040089F04B = {
 			isa = PBXGroup;
 			children = (
+				3CFDEF7B244212280069A94F /* README.md */,
 				3C6393DD243D0F040089F04B /* InfoSharing */,
 				3C6393DC243D0F040089F04B /* Products */,
 				FECA371F6DF01D50C0072E84 /* Pods */,
@@ -95,6 +101,7 @@
 			children = (
 				3C6393EC243D0F090089F04B /* Info.plist */,
 				3C639409243D3C1A0089F04B /* GoogleService-Info.plist */,
+				3CFDEF7E244217B00069A94F /* client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist */,
 				3CCECE10243D47A000A2D820 /* Supporting */,
 				3CCECE11243D47D500A2D820 /* Controllers */,
 				3CCECE12243D47FE00A2D820 /* Resources */,
@@ -155,6 +162,7 @@
 				3C6393F8243D1BF60089F04B /* RegisterVC.swift */,
 				3C6393F6243D18000089F04B /* MainVC.swift */,
 				3C6AD27A243F973200E95A6A /* LoginWithPhooneVC.swift */,
+				3CFDEF7C244214950069A94F /* GoogleEventsVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 				3C6393D8243D0F040089F04B /* Frameworks */,
 				3C6393D9243D0F040089F04B /* Resources */,
 				72BC844B9BACA95F70B7023F /* [CP] Embed Pods Frameworks */,
+				C17A3C3E890C2D13E567F899 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,6 +258,7 @@
 				3C6393EB243D0F090089F04B /* LaunchScreen.storyboard in Resources */,
 				3C63940A243D3C1B0089F04B /* GoogleService-Info.plist in Resources */,
 				3C6393E8243D0F090089F04B /* Assets.xcassets in Resources */,
+				3CFDEF7F244217B00069A94F /* client_750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +280,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfoSharing/Pods-InfoSharing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C17A3C3E890C2D13E567F899 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfoSharing/Pods-InfoSharing-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InfoSharing/Pods-InfoSharing-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InfoSharing/Pods-InfoSharing-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		EF4558A107E8F854D04C8942 /* [CP] Check Pods Manifest.lock */ = {
@@ -314,6 +341,7 @@
 				3C6AD27B243F973200E95A6A /* LoginWithPhooneVC.swift in Sources */,
 				3C639401243D1F6C0089F04B /* AddView.swift in Sources */,
 				3C6393F9243D1BF60089F04B /* RegisterVC.swift in Sources */,
+				3CFDEF7D244214950069A94F /* GoogleEventsVC.swift in Sources */,
 				3C6393DF243D0F040089F04B /* AppDelegate.swift in Sources */,
 				3C6AD27D243FC34000E95A6A /* PhoneAuthService.swift in Sources */,
 				3C6393E1243D0F040089F04B /* SceneDelegate.swift in Sources */,

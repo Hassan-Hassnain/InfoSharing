@@ -8,6 +8,10 @@
 
 import UIKit
 import Firebase
+import GoogleSignIn
+
+let CLIENT_ID = "750374453418-363del5odp0q8a5f5oggsmqg78e0519i.apps.googleusercontent.com"
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
+        GIDSignIn.sharedInstance().clientID = CLIENT_ID
         return true
     }
 
